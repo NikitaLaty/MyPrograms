@@ -1,0 +1,37 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class TestAverage1 {
+
+	public static void main(String[] args) {
+
+		Scanner keyboard = new Scanner(System.in);
+		Random random = new Random();
+		
+		System.out.println("Roulette");
+		
+	
+		int number;
+		int table ;
+
+		do {
+			System.out.println("Pick a number 1-36");
+			number = keyboard.nextInt();
+			
+				table = random.nextInt(36);
+				
+				System.out.println("No more bets...");
+				System.out.println("roll...");
+				System.out.println(table);
+				
+
+			
+		} while (table  != number);
+
+		System.out.println("You win");
+    
+		
+keyboard.close();
+	}
+
+}
